@@ -1,0 +1,11 @@
+;this is a comment
+;you can use most characters except ones DOS will parse out, like >,< and |
+;4DOS (and NDOS) will also grab the backwards quote and double quote `, and "
+;Notice that trailing backslashes don't bother the program either.
+;
+pctr c:\tracker\mods\
+asm c:\prog\asm
+d/l c:\download
+u/l c:\upload
+badtest1 x:\
+badtest2 c:\dodgy

@@ -1,0 +1,78 @@
+
+                         -------------------------
+                             Directory X V1.20
+                          (C) 1993 Kevin J. Phair
+                         -------------------------
+
+        Have you ever set up a really long path name for source code or
+        other things? It can get pretty annoying having to type in a 20
+        character long path name just to  change directory.  Of course,
+        you can always write a  batch file to do the directory setting,
+        but that's really a bit clumsy, and I believe I've got a better
+        solution.  This program will take an AKA (Also Known As) as the
+        command line parameter and then do a match to find out what the
+        real name on the drive should be.
+
+        The first thing the program does is to look for a file with the
+        same name, but with an extension of .AKA, so if you happened to
+        rename DX.COM to CD2.COM then it'll look for CD2.AKA instead of
+        DX.AKA. The .AKA file is just a text file (size limited to 50k)
+        with the name of the AKA followed by the path it refers to (the
+        AKA and the path should be separated by white space,  i.e. tabs
+        or spaces.)
+
+        If the file DX.AKA contained the following line:
+
+                WORK C:\PROG\SOURCE\BASIC
+
+        then entering "DX WORK" on the command line would set the drive
+        to C: and the directory to "\PROG\SOURCE\BASIC". Pretty useful,
+        I think you'll agree. There's an example DX.AKA for you to look
+        at which should explain everything.
+
+        The only requirements are that the DX.AKA file should be in the
+        same directory as the program and that you're using DOS 3.10 or
+        later.
+
+        * NEW IN THIS VERSION! *
+        Now you can also specify a path to append to the AKA. So if you
+        entered "DX WORK PROJECT" it would set the current directory to
+        C:\PROG\SOURCE\BASIC, and then attempt to move into the PROJECT
+        below that (i.e. C:\PROG\SOURCE\BASIC\PROJECT). This is quite a
+        good compromise between typing in DX etc. then changing down to
+        another directory, and defining a new AKA which wouldn't really
+        be much different from others already there.
+
+
+        * PAYMENT *
+
+        This program is totally FREE, you're not obliged to pay a thing
+        for it, or even feel guilty about not paying for it! After all,
+        it only took about an hour to knock together so I've hardly put
+        my life's work into it (but of course, it probably doesn't work
+        perfectly either... ;-)
+
+                                                        Kevin Phair.
+
+        BTW, the X stands for whatever you want, I can't decide whether
+        to call it directory extender, directory expander of whatever.
+
+
+        History:
+
+        Version 1.00 (not released.) Had a few (two) bugs. Didn't check
+        the availability of a drive either.
+
+        Version 1.10 (first released version.) Fixed those naughty bugs
+        and, erm, released it...
+
+        Version 1.20 (this version.) Added the ability to specify a
+        further path to change further down into after the AKA takes
+        effect.
+
+        Version 1.30 (RSN) Will ask if you want to see your aka list
+        if you enter a non-existent AKA name.
+
+
+        (Support real music, listen to Sunset 107FM. Now all we want is
+        a station which plays metal, not to much to ask really, is it?)

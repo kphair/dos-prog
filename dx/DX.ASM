@@ -4,7 +4,7 @@
 ;
 ; Written in about 80 minutes using QEdit and A86
 ; Author: Kevin J Phair
-; Date:   Friday, the 13th of August. (erk! Only just noticed that date)
+; Date:   13 Aug, 1993
 ;
 ; Written for compiling with the A86 assembler.
 ;
@@ -28,7 +28,7 @@ dosver_err:     printm dosver_err_msg
                 int 020
 
 ;-----------------------------------------------------------------------------
-;               Message for lamers!
+;               Help text
 ;-----------------------------------------------------------------------------
 help_msg:       db 13,10
                 db 'Directory X, v1.10 (C) 1993, Kevin J Phair. This is a FREEWARE utility.',13,10
